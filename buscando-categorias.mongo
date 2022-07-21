@@ -1,0 +1,8 @@
+
+db.artigos.find({categorias: "Programação"}).explain('executionStats') // show execution status
+
+db.artigos.createIndex({categorias: 1}) // creates index to fasten up the search
+
+db.artigos.getIndexes() // view all indexes
+
+db.artigos.createIndex({slug: 1})

@@ -1,0 +1,28 @@
+
+db.artigos.aggregate([
+	{	// first step
+		$group: {
+			_id: "$autor.email", // agrupa considerando que email é unico
+			nome: {
+				$first: "$autor.nome"
+			},
+			email: {
+				$first: "$autor.email"
+			},
+			descricao: {
+				$first: "$autor.descricao"
+			},
+			senha: {
+				$first: "$autor.senha"
+			},
+		}
+	},
+	{	//second step
+		$project: {
+			_id: 0
+		}
+	},
+	{	//third step
+		$out: 'infoAutores'
+	}
+])

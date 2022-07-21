@@ -1,0 +1,14 @@
+db.autores.update({
+	nome: "Gabriel Ferreira"
+},{
+	$set: {
+		artigos: [
+			{
+				slug: "projeto-caelum-nas-faculdades",
+				titulo: "Projeto Caelum nas Faculdades",
+				conteudo: "Aqui na Caelum nós estudamos muito. Muito mesmo.E não falo isso só por falar: é o nosso trabalho. Precisamos estudar e aprender o máximo possível.E tentamos sempre compartilhar nosso conhecimento através das aulas, em posts aqui no blog, vídeos e redes sociais. Mas não é o suficiente.Nós queremos mais. Começamos, então, o projeto Caelum nas Faculdades!Inicialmente, fiz apenas um post no meu blog pra contar sobre o projeto e eu e o Alberto fizemos alguns tweets a respeito.E mesmo com pouca divulgação, o resultado foi muito bom.",
+				dataCriado: ISODate('2019-06-04')
+			}
+		]
+	}
+})

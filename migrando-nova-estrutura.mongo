@@ -1,0 +1,25 @@
+db.autores.aggregate([
+	{
+		$unwind: "$artigos" //separates every artigo on one Object with the autor id
+	},
+	{
+		$project: {
+			_id: 0, //restructure without id new id
+			"autor.nome": "$nome",
+			"autor.descricao": "$descricao",
+			"autor.email": "$email",
+			"autor.senha": "$senha",
+			"slug": "$artigos.slug",
+			"titulo": "$artigos.titulo",
+			"conteudo": "$artigos.conteudo",
+			"dataCriado": "$artigos.dataCriado"
+		} //restructure the data with the syntax "new-location" : "old-location"
+	},
+	{
+		$out: "artigos" // overwrites everything on artigos
+	}
+])
+
+db.autores.drop()
+
+db.getCollectionNames()
