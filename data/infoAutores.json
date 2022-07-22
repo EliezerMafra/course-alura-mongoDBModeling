@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "62d99a1e074192a63856c9aa"
+  },
+  "nome": "Yuri Matheus",
+  "email": "yuri@alura.com.br",
+  "descricao": "Instrutor na Alura",
+  "senha": "senha"
+},{
+  "_id": {
+    "$oid": "62d99a1e074192a63856c9ab"
+  },
+  "nome": "Felipe Nascimento",
+  "email": "felipe@alura.com.br",
+  "descricao": "Escritor do blog da Alura",
+  "senha": "senha"
+},{
+  "_id": {
+    "$oid": "62d99a1e074192a63856c9ac"
+  },
+  "nome": "Gabriel Ferreira",
+  "email": "gabs@caelum.com",
+  "descricao": " Dev",
+  "senha": "gabs1234"
+}]
