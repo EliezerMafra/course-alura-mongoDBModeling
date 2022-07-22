@@ -1,4 +1,4 @@
-db.autores.update({nome: "Gabriel Ferreira"}, { $set: {
+db.autores.updateOne({nome: "Gabriel Ferreira"}, { $set: {
     artigos: [
         {
             slug: "faculdade-e-diploma-sao-necessarios-para-programar",
@@ -21,7 +21,7 @@ db.autores.update({nome: "Gabriel Ferreira"}, { $set: {
     ]
 }})
 
-db.autores.update({nome: "Yuri Matheus"}, { $set: {
+db.autores.updateOne({nome: "Yuri Matheus"}, { $set: {
     artigos: [
         {
             slug: "visualizando-dados-de-frequencia",
@@ -38,7 +38,7 @@ db.autores.update({nome: "Yuri Matheus"}, { $set: {
     ]
 }})
 
-db.autores.update({nome: "Felipe Nascimento"}, { $set: {
+db.autores.updateOne({nome: "Felipe Nascimento"}, { $set: {
     artigos: [
         {
             slug: "criando-e-publicando-uma-biblioteca-javascript-no-npm",

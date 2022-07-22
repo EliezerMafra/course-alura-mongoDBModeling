@@ -1,4 +1,4 @@
-db.autores.update({
+db.autores.updateOne({
 	nome: "Gabriel Ferreira"
 },{
 	$set: {
