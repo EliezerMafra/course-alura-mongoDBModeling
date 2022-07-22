@@ -3,10 +3,11 @@
     "$oid": "62d952a4ab97671ef31cb8f1"
   },
   "autor": {
-    "nome": "Gabriel Ferreira",
+    "nome": "Gabriel",
     "descricao": " Dev",
-    "email": "gabs@caelum.com",
-    "senha": "gabs1234"
+    "id_info": {
+      "$oid": "62d99a1e074192a63856c9ac"
+    }
   },
   "slug": "faculdade-e-diploma-sao-necessarios-para-programar",
   "titulo": "Faculdade e diploma são necessários para programar?",
@@ -18,16 +19,79 @@
   },
   "categorias": [
     "Carreira"
+  ],
+  "comentarios": [
+    {
+      "nome": "Douglas",
+      "email": "douglas@example.org",
+      "texto": "Artigo muito informativo!",
+      "data": {
+        "$date": {
+          "$numberLong": "1563840000000"
+        }
+      }
+    },
+    {
+      "nome": "Carlos",
+      "email": "carlos@example.org",
+      "texto": "Não gostei",
+      "data": {
+        "$date": {
+          "$numberLong": "1552176000000"
+        }
+      }
+    },
+    {
+      "nome": "Kauê",
+      "email": "kaue@example.org",
+      "texto": "Top",
+      "data": {
+        "$date": {
+          "$numberLong": "1555977600000"
+        }
+      }
+    },
+    {
+      "nome": "Erick",
+      "email": "erick@example.org",
+      "texto": "Não entendi",
+      "data": {
+        "$date": {
+          "$numberLong": "1560124800000"
+        }
+      }
+    },
+    {
+      "nome": "Eduardo",
+      "email": "eduardo@example.org",
+      "texto": "Muito bom o post!",
+      "data": {
+        "$date": {
+          "$numberLong": "1548201600000"
+        }
+      }
+    },
+    {
+      "nome": "Manuela",
+      "email": "manuela@example.org",
+      "texto": "Parabéns!",
+      "data": {
+        "$date": {
+          "$numberLong": "1566345600000"
+        }
+      }
+    }
   ]
 },{
   "_id": {
     "$oid": "62d952a4ab97671ef31cb8f2"
   },
   "autor": {
-    "nome": "Gabriel Ferreira",
+    "nome": "Gabriel",
     "descricao": " Dev",
-    "email": "gabs@caelum.com",
-    "senha": "gabs1234"
+    "id_info": {
+      "$oid": "62d99a1e074192a63856c9ac"
+    }
   },
   "slug": "carreira-em-ti-quais-os-profissionais-mais-requisitados-no-brasil",
   "titulo": "Carreira em TI: quais os profissionais mais requisitados no Brasil?",
@@ -40,7 +104,8 @@
   "categorias": [
     "Programação",
     "Carreira"
-  ]
+  ],
+  "comentarios": []
 },{
   "_id": {
     "$oid": "62d952a4ab97671ef31cb8f4"
@@ -48,8 +113,9 @@
   "autor": {
     "nome": "Yuri Matheus",
     "descricao": "Instrutor na Alura",
-    "email": "yuri@alura.com.br",
-    "senha": "senha"
+    "id_info": {
+      "$oid": "62d99a1e074192a63856c9aa"
+    }
   },
   "slug": "visualizando-dados-de-frequencia",
   "titulo": "Visualizando dados de frequência",
@@ -62,6 +128,98 @@
   "categorias": [
     "Ciência de Dados",
     "Python"
+  ],
+  "comentarios": [
+    {
+      "nome": "Eduardo",
+      "email": "eduardo@example.org",
+      "texto": "Muito bom o post!",
+      "data": {
+        "$date": {
+          "$numberLong": "1548201600000"
+        }
+      }
+    },
+    {
+      "nome": "João",
+      "email": "joao@example.org",
+      "texto": "Gostei muito!",
+      "data": {
+        "$date": {
+          "$numberLong": "1550707200000"
+        }
+      }
+    },
+    {
+      "nome": "Carlos",
+      "email": "carlos@example.org",
+      "texto": "Não gostei",
+      "data": {
+        "$date": {
+          "$numberLong": "1552176000000"
+        }
+      }
+    },
+    {
+      "nome": "Kauê",
+      "email": "kaue@example.org",
+      "texto": "Top",
+      "data": {
+        "$date": {
+          "$numberLong": "1555977600000"
+        }
+      }
+    },
+    {
+      "nome": "Daniel",
+      "email": "daniel@example.org",
+      "texto": "Aprendi demais!",
+      "data": {
+        "$date": {
+          "$numberLong": "1558396800000"
+        }
+      }
+    },
+    {
+      "nome": "Erick",
+      "email": "erick@example.org",
+      "texto": "Não entendi",
+      "data": {
+        "$date": {
+          "$numberLong": "1560124800000"
+        }
+      }
+    },
+    {
+      "nome": "Douglas",
+      "email": "douglas@example.org",
+      "texto": "Artigo muito informativo!",
+      "data": {
+        "$date": {
+          "$numberLong": "1563840000000"
+        }
+      }
+    },
+    {
+      "nome": "Manuela",
+      "email": "manuela@example.org",
+      "texto": "Parabéns!",
+      "data": {
+        "$date": {
+          "$numberLong": "1566345600000"
+        }
+      }
+    },
+    {
+      "nome": "Beatriz",
+      "email": "beatriz@example.org",
+      "texto": "Acho que não é bem assim",
+      "data": {
+        "$date": {
+          "$numberLong": "1568073600000"
+        }
+      }
+    }
   ]
 },{
   "_id": {
@@ -70,8 +228,9 @@
   "autor": {
     "nome": "Yuri Matheus",
     "descricao": "Instrutor na Alura",
-    "email": "yuri@alura.com.br",
-    "senha": "senha"
+    "id_info": {
+      "$oid": "62d99a1e074192a63856c9aa"
+    }
   },
   "slug": "entendendo-a-geracao-de-chaves-com-jpa",
   "titulo": "Entendendo a geração de chaves com JPA",
@@ -84,7 +243,8 @@
   "categorias": [
     "Programação",
     "Java"
-  ]
+  ],
+  "comentarios": []
 },{
   "_id": {
     "$oid": "62d952a4ab97671ef31cb8f6"
@@ -92,8 +252,9 @@
   "autor": {
     "nome": "Felipe Nascimento",
     "descricao": "Escritor do blog da Alura",
-    "email": "felipe@alura.com.br",
-    "senha": "senha"
+    "id_info": {
+      "$oid": "62d99a1e074192a63856c9ab"
+    }
   },
   "slug": "criando-e-publicando-uma-biblioteca-javascript-no-npm",
   "titulo": "Criando e publicando uma biblioteca Javascript no NPM",
@@ -106,16 +267,49 @@
   "categorias": [
     "JavaScript",
     "Bibliotecas"
+  ],
+  "comentarios": [
+    {
+      "nome": "Júlio",
+      "email": "julio@example.org",
+      "texto": "show!",
+      "data": {
+        "$date": {
+          "$numberLong": "1558656000000"
+        }
+      }
+    },
+    {
+      "nome": "Matheus",
+      "email": "matheus@example.org",
+      "texto": "gostei",
+      "data": {
+        "$date": {
+          "$numberLong": "1560297600000"
+        }
+      }
+    },
+    {
+      "nome": "Melissa",
+      "email": "melissa@example.org",
+      "texto": "bom!",
+      "data": {
+        "$date": {
+          "$numberLong": "1563840000000"
+        }
+      }
+    }
   ]
 },{
   "_id": {
     "$oid": "62d982f265f8591e24e11633"
   },
   "autor": {
-    "nome": "Gabriel Ferreira",
+    "nome": "Gabriel",
     "descricao": " Dev",
-    "email": "gabs@caelum.com",
-    "senha": "gabs1234"
+    "id_info": {
+      "$oid": "62d99a1e074192a63856c9ac"
+    }
   },
   "slug": "projeto-caelum-nas-faculdades",
   "titulo": "Projeto Caelum nas Faculdades",
@@ -124,5 +318,6 @@
     "$date": {
       "$numberLong": "1559606400000"
     }
-  }
+  },
+  "comentarios": []
 }]

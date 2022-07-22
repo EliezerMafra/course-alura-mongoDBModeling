@@ -1,0 +1,16 @@
+
+db.infoAutores.updateOne({
+	nome: "Gabriel Ferreira"
+},{
+	$set: {
+		nome: "Gabriel"
+	}
+})
+
+db.artigos.updateOne({ 
+	"autor.nome": "Gabriel Ferreira"
+},{
+	$set: {
+		"autor.nome": "Gabriel"
+	}
+},{ multi: true} ) // to update all the cases where autor.nome is "Gabriel Ferreira"

@@ -1,0 +1,13 @@
+db.artigos.find({
+	comentarios:{
+		$exists: true
+	}
+}).forEach(function(artigo){
+
+	db.comentarios.find({ 
+		id_artigo: artigo._id
+	},{ 
+		_id:0 
+	})
+
+})
