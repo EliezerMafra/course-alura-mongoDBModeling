@@ -1,0 +1,34 @@
+
+db.artigos.updateOne({
+	slug: 'visualizando-dados-de-frequencia'
+},{
+	$pop: {
+		comentarios: 1
+	}
+})
+
+var documento = db.artigos.findOneAndUpdate({
+	slug: 'visualizando-dados-de-frequencia'
+},{
+	$push: {
+		comentarios: {
+			$each:[
+				{
+					nome: "Giovanni",
+					email: "giovani@gmail.com",
+					texto: "Giovani gostou disso",
+					data: ISODate('2022-07-25')
+				}
+			],
+			$position: 0
+		}
+	}
+}, { returnNewDocument: true});
+
+db.comentarios.insertOne({
+	id_artigo: documento._id,
+	nome: "Giovanni",
+	email: "giovani@gmail.com",
+	texto: "Giovani gostou disso",
+	data: ISODate('2022-07-25')
+})
