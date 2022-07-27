@@ -1,0 +1,59 @@
+
+// Inserindo autor novo
+db.infoAutores.insertOne({
+	nome: "Capitão Jack Sparrow",
+	email: "capit@capit.com",
+	senha: "run",
+	descricao: "Capitão do Black Pearl: Jack Sparrow"
+})
+
+
+// inserindo um artigo ao autor
+var autorInfo = db.infoAutores.findOne({
+	email: "capit@capit.com"
+})
+
+db.artigos.insertOne({
+	autor: {
+		nome: autorInfo.nome,
+		descricao: autorInfo.descricao,
+		id_info: autorInfo._id,
+	},
+	slug: 'dicas-politicas-de-senha',
+	titulo: "Algumas dicas importantes sobre políticas de senha",
+	conteudo: "Recentemente, realizei alguns testes de segurança em uma aplicação web que mantenho online.Ao final, consegui acesso a uma grande parte das contas de diferentes usuários. Mesmo assim, os resultados do teste me mostraram que meu sistema, no geral, estava seguro. Não havia uma vulnerabilidade no meu banco de dados, nem uma falha própria do sistema. O problema, na verdade, estava nas senhas dos usuários!O fato é que, por algum motivo, meus usuários estavam usando senhas fracas para suas próprias contas. E por que isso? Ademais, por que eu deveria me importar com isso? Afinal, aparentemente o problema de segurança não está do lado da aplicação, mas sim dos usuários… certo? Na verdade, não!",
+	dataCriado: ISODate('2018-07-18'),
+	categorias: [
+		'Arquitetura',
+		'Programação'
+	],
+	comentarios: []
+})
+
+// inserindo comentario
+
+var documento = db.artigos.findOneAndUpdate({
+	slug: "dicas-politicas-de-senha"
+},{
+	$push: {
+		comentarios: {
+			$each: [
+				{
+					nome: "Capitão Jack Sparrow",
+					email: "capit@capit.com",
+					texto:'TOPZERA',
+					data: ISODate('2022-07-25')
+				}
+			],
+			$position: 0
+		}
+	}
+},{returnNewDocument: true})
+
+db.comentarios.insertOne({
+	id_artigo: documento._id,
+	nome: "Capitão Jack Sparrow",
+	email: "capit@capit.com",
+	texto:'TOPZERA',
+	data: ISODate('2022-07-25')
+})
